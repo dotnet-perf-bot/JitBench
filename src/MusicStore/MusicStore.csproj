@@ -8,6 +8,9 @@
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <AssemblyName>MusicStore</AssemblyName>
     <OutputType>Exe</OutputType>
+    <RestoreSources>$(RestoreSources);https://api.nuget.org/v3/index.json</RestoreSources>
+    <RestoreSources>$(RestoreSources);https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json</RestoreSources>
+    <RestoreSources>$(RestoreSources);https://dotnet.myget.org/F/dotnet-core/api/v3/index.json</RestoreSources>
 
     <!-- This will prevent our build system from trying to package this project. -->
     <IsPackable>false</IsPackable>
