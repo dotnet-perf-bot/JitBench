@@ -32,6 +32,7 @@ namespace MusicStore
                 .AddCommandLine(args)
                 .AddEnvironmentVariables(prefix: "ASPNETCORE_")
                 .Build();
+            Console.WriteLine("Content Path: " + Directory.GetCurrentDirectory());
 
             var builder = new WebHostBuilder()
                 .UseContentRoot(Directory.GetCurrentDirectory())
@@ -54,6 +55,7 @@ namespace MusicStore
             var serverStartupTime = totalTime.ElapsedMilliseconds;
             Console.WriteLine("Server started in {0}ms", serverStartupTime);
             Console.WriteLine();
+            Console.ReadKey();
 
             using (var client = new HttpClient())
             {
