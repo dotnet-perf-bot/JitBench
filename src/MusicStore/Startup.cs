@@ -102,7 +102,7 @@ namespace MusicStore
             {
                 options.ConsumerKey = "lDSPIu480ocnXYZ9DumGCDw37";
                 options.ConsumerSecret = "fpo0oWRNc3vsZKlZSq1PyOSoeXlJd7NnG4Rfc94xbFXsdcc3nH";
-            })
+            });
 
             // The MicrosoftAccount service has restrictions that prevent the use of
             // http://localhost:5001/ for test applications.
@@ -118,11 +118,11 @@ namespace MusicStore
 
             // The sample app can then be run via:
             // dnx . web
-            .AddMicrosoftAccount(options =>
-            {
-                options.ClientId = "000000004012C08A";
-                options.ClientSecret = "GaMQ2hCnqAC6EcDLnXsAeBVIJOLmeutL";
-            });
+            //.AddMicrosoftAccount(options =>
+            //{
+            //    options.ClientId = "000000004012C08A";
+            //    options.ClientSecret = "GaMQ2hCnqAC6EcDLnXsAeBVIJOLmeutL";
+            //});
         }
 
         //This method is invoked when ASPNETCORE_ENVIRONMENT is 'Development' or is not defined
