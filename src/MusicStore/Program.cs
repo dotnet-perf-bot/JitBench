@@ -55,7 +55,6 @@ namespace MusicStore
             var serverStartupTime = totalTime.ElapsedMilliseconds;
             Console.WriteLine("Server started in {0}ms", serverStartupTime);
             Console.WriteLine();
-            Console.ReadKey();
 
             using (var client = new HttpClient())
             {
